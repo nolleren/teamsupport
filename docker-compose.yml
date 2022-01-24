@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  client:
+      container_name: client
+      build:
+          context: ./client
+          dockerfile: Dockerfile-client
+      ports:
+          - '3000:3000'
+      volumes:
+          - ./client:/usr/src/app
+          - /usr/src/app/node_modules
+
+  graphql:
+      container_name: graphqlapi
+      build:
+          context: ./API
+          dockerfile: Dockerfile
+      ports:
+          - '9006:9006'            
+      volumes:
+          - ./API:/app
+volumes:
+  node_modules:

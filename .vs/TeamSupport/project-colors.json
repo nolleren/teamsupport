@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c936e9f1-e3a1-441b-b714-9e24ecc3b112": {
+      "ProjectGuid": "c936e9f1-e3a1-441b-b714-9e24ecc3b112",
+      "DisplayName": "BLL",
+      "ColorIndex": 0
+    },
+    "c84a54d8-c7ef-4fad-bee4-3b5965f477a4": {
+      "ProjectGuid": "c84a54d8-c7ef-4fad-bee4-3b5965f477a4",
+      "DisplayName": "DAL",
+      "ColorIndex": 1
+    },
+    "81b749fa-9c88-4d41-b048-55b6a3e5296b": {
+      "ProjectGuid": "81b749fa-9c88-4d41-b048-55b6a3e5296b",
+      "DisplayName": "API",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "b5eef07f-7e47-426d-b98d-67532b7e52b2": {
+      "ProjectGuid": "b5eef07f-7e47-426d-b98d-67532b7e52b2",
+      "DisplayName": "client",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
