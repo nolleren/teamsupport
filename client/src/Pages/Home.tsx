@@ -6,7 +6,7 @@ const Home = () => {
 	return (
 		<Stack horizontal >
 			<Stack.Item>
-
+				HELLO
 			</Stack.Item>
 			<Stack.Item>
 
