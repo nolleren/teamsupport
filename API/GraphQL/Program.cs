@@ -6,8 +6,16 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 IConfiguration configuration = new ConfigurationBuilder()
-                            .AddJsonFile("appsettings.json")
-                            .Build();
+							.AddJsonFile("appsettings.json")
+							.Build();
+
+builder.Services
+	.AddCors(o =>
+				o.AddDefaultPolicy(b =>
+				b.AllowAnyHeader()
+				.AllowAnyMethod()
+				.AllowAnyOrigin())
+			);
 
 // Add services to the container.
 builder.Services.AddPooledDbContextFactory<ApplicationDbContext>(options => options.UseSqlite("Data Source=support.db"));
@@ -20,22 +28,22 @@ builder.Services.AddHttpContextAccessor();
 
 // GraphQL Logic
 builder.Services
-    .AddGraphQLServer()
-    .AddAuthorization()
-    .AddHttpRequestInterceptor<HttpRequestInterceptor>()
-    .AddQueriesExtension()
-    .AddMutationsExtension()
-    .AddTypesExtension()
-    .AddDataLoadersExtension()
-    .AddSubscriptionsExtension()
-    .AddInMemorySubscriptions();
+	.AddGraphQLServer()
+	// .AddAuthorization()
+	.AddHttpRequestInterceptor<HttpRequestInterceptor>()
+	.AddQueriesExtension()
+	.AddMutationsExtension()
+	.AddTypesExtension()
+	.AddDataLoadersExtension()
+	.AddSubscriptionsExtension()
+	.AddInMemorySubscriptions();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();
+	app.UseDeveloperExceptionPage();
 }
 
 app.UseRouting();
@@ -47,9 +55,11 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseCors();
+
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGraphQL();
+	endpoints.MapGraphQL();
 });
 
 app.Run();

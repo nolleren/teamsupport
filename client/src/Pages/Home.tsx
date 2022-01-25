@@ -1,5 +1,4 @@
-import { Stack } from '@fluentui/react'
-
+import { Stack } from '@fluentui/react';
 
 const Home = () => {
 
@@ -15,7 +14,7 @@ const Home = () => {
 
 			</Stack.Item>
 		</Stack>
-	)
-}
+	);
+};
 
 export default Home;

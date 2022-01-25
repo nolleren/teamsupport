@@ -12,11 +12,12 @@
 */build
 
 # API 
-*/bin
-*/obj
+**/bin
+**/obj
 
-*/.vscode
-/.vs
+**/.vscode
+**/.vs
+**/.suo
 
 # misc
 .DS_Store
@@ -28,3 +29,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vs/TeamSupport/v17/.suo
+.vs/TeamSupport/v17/.futdcache.v1

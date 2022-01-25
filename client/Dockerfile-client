@@ -3,7 +3,7 @@ FROM node:15-alpine
 WORKDIR /usr/src/app
 
 COPY package.json ./
-COPY yarn.lock ./
+# COPY yarn.lock ./
 
 COPY package.json ./client/
 
