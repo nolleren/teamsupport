@@ -1,11 +1,11 @@
-﻿using GraphQL.Common;
+﻿using GraphQL.Data.Common;
 using BLL.Data;
 using BLL.Interfaces;
-using HotChocolate.AspNetCore.Authorization;
 using HotChocolate.Subscriptions;
-using GraphQL.API.Subscriptions;
+using GraphQL.Data.Subscriptions;
+using Microsoft.AspNetCore.Authorization;
 
-namespace GraphQL.API.Answers
+namespace GraphQL.Data.Answers
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class AnswerMutations

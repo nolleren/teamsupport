@@ -1,4 +1,4 @@
-﻿namespace GraphQL.API.Answers
+﻿namespace GraphQL.Data.Answers
 {
     public record AnswerInput(
         Guid TickedId,

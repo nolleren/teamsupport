@@ -1,12 +1,12 @@
-﻿using GraphQL.Common;
+﻿using GraphQL.Data.Common;
 using BLL.Data;
 using BLL.Interfaces;
-using GraphQL.API.Answers;
-using HotChocolate.AspNetCore.Authorization;
+using GraphQL.Data.Answers;
 using HotChocolate.Subscriptions;
-using GraphQL.API.Subscriptions;
+using GraphQL.Data.Subscriptions;
+using Microsoft.AspNetCore.Authorization;
 
-namespace GraphQL.API.Tickets
+namespace GraphQL.Data.Tickets
 {
     [ExtendObjectType(OperationTypeNames.Mutation)]
     public class TicketMutations

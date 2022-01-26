@@ -1,17 +1,19 @@
-﻿using GraphQL.Common;
+﻿using GraphQL.Data.Common;
 using BLL.Data;
 using BLL.Interfaces;
 using LinqKit;
 using BLL.Helpers;
 using BLL.Settings;
 using Microsoft.Extensions.Options;
-using HotChocolate.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
-namespace GraphQL.API.Users
+namespace GraphQL.Data.Users
 {
-    [ExtendObjectType(OperationTypeNames.Mutation)]    
+    [ExtendObjectType(OperationTypeNames.Mutation)]
+    [Authorize]
     public class UserMutations
     {
+        [AllowAnonymous]
         public async Task<UserPayload> LoginUserAsync(
             string email,
             string password,
@@ -36,7 +38,6 @@ namespace GraphQL.API.Users
             return new UserPayload(token);
         }
 
-        [Authorize]
         public async Task<UserPayload> AddUserAsync(
             UserInput input,
             [Service] IUserRepository repository,
@@ -74,7 +75,6 @@ namespace GraphQL.API.Users
             return new UserPayload(createdUser);
         }
 
-        [Authorize]
         public async Task<UserPayload> UpdateUserAsync(
             Guid id,
             UserInput input,
@@ -113,7 +113,6 @@ namespace GraphQL.API.Users
             return new UserPayload(createdUser);
         }
 
-        [Authorize]
         public async Task<UserPayload> DeleteUserAsync(
             Guid id,
             [Service] IUserRepository repository,

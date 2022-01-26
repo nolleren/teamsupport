@@ -31,3 +31,4 @@ yarn-debug.log*
 yarn-error.log*
 .vs/TeamSupport/v17/.suo
 .vs/TeamSupport/v17/.futdcache.v1
+.vs/TeamSupport/DesignTimeBuild/.dtbcache.v2

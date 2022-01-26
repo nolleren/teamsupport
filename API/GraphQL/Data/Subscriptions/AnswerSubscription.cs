@@ -1,6 +1,6 @@
 ﻿using BLL.Data;
 
-namespace GraphQL.API.Subscriptions
+namespace GraphQL.Data.Subscriptions
 {
     [ExtendObjectType(OperationTypeNames.Subscription)]
     public class AnswerSubscription

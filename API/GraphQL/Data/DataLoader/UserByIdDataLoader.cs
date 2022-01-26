@@ -2,7 +2,7 @@
 using DAL.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace BLL.DataLoader
+namespace GraphQL.Data.DataLoader
 {
     public class UserByIdDataLoader : BatchDataLoader<Guid, User>
     {

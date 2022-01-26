@@ -2,7 +2,7 @@
 using BLL.Interfaces;
 using HotChocolate.AspNetCore.Authorization;
 
-namespace GraphQL.API.Answers
+namespace GraphQL.Data.Answers
 {
     [ExtendObjectType(OperationTypeNames.Query)]
     [Authorize]

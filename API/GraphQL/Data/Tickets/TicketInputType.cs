@@ -1,4 +1,4 @@
-﻿namespace GraphQL.API.Tickets
+﻿namespace GraphQL.Data.Tickets
 {
     public record TicketInput(
         Guid CustomerId,

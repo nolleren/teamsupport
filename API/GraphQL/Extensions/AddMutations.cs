@@ -1,6 +1,6 @@
-﻿using GraphQL.API.Answers;
-using GraphQL.API.Tickets;
-using GraphQL.API.Users;
+﻿using GraphQL.Data.Answers;
+using GraphQL.Data.Tickets;
+using GraphQL.Data.Users;
 using HotChocolate.Execution.Configuration;
 
 namespace GraphQL.Extensions
@@ -14,9 +14,6 @@ namespace GraphQL.Extensions
                 .AddTypeExtension<UserMutations>()
                 .AddTypeExtension<TicketMutations>()
                 .AddTypeExtension<AnswerMutations>();
-
-
-
         }
     }
 }

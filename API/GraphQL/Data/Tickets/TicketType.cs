@@ -1,10 +1,7 @@
-﻿using BLL.DataLoader;
-using BLL.Data;
-using HotChocolate;
-using HotChocolate.Types;
-using GraphQL.API.Resolvers;
+﻿using BLL.Data;
+using GraphQL.Data.Resolvers;
 
-namespace GraphQL.API.Tickets
+namespace GraphQL.Data.Tickets
 {
     public class TicketType : ObjectType<Ticket>
     {

@@ -1,7 +1,7 @@
-﻿using GraphQL.Common;
+﻿using GraphQL.Data.Common;
 using BLL.Data;
 
-namespace GraphQL.API.Tickets
+namespace GraphQL.Data.Tickets
 {
     public class TicketPayload
     {

@@ -2,7 +2,7 @@
 using BLL.Interfaces;
 using HotChocolate.AspNetCore.Authorization;
 
-namespace GraphQL.API.Tickets
+namespace GraphQL.Data.Tickets
 {
     [ExtendObjectType(OperationTypeNames.Query)]
     [Authorize]

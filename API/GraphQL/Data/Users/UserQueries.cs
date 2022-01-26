@@ -1,10 +1,10 @@
 ﻿using BLL.Data;
 using BLL.Interfaces;
-using GraphQL.API.Subscriptions;
+using GraphQL.Data.Subscriptions;
 using HotChocolate.AspNetCore.Authorization;
 using HotChocolate.Subscriptions;
 
-namespace GraphQL.API.Users
+namespace GraphQL.Data.Users
 {
     [ExtendObjectType(OperationTypeNames.Query)]
     [Authorize]

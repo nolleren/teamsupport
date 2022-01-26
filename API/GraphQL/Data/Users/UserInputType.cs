@@ -1,6 +1,6 @@
 ﻿using BLL.Data;
 
-namespace GraphQL.API.Users
+namespace GraphQL.Data.Users
 {
     public record UserInput(
         string Username,

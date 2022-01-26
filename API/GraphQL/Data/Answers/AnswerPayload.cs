@@ -1,7 +1,7 @@
-﻿using GraphQL.Common;
+﻿using GraphQL.Data.Common;
 using BLL.Data;
 
-namespace GraphQL.API.Answers
+namespace GraphQL.Data.Answers
 {
     public class AnswerPayload
     {

@@ -1,7 +1,7 @@
 ﻿using BLL.Data;
-using BLL.DataLoader;
+using GraphQL.Data.DataLoader;
 
-namespace GraphQL.API.Resolvers
+namespace GraphQL.Data.Resolvers
 {
     public class UserResolver
     {

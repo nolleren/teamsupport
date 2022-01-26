@@ -1,9 +1,7 @@
 ﻿using BLL.Data;
 using BLL.Interfaces;
-using GreenDonut;
-using HotChocolate;
 
-namespace BLL.DataLoader
+namespace GraphQL.Data.DataLoader
 {
     public class AnswerBatchDataLoader : BatchDataLoader<Guid, List<Answer>>
     {
