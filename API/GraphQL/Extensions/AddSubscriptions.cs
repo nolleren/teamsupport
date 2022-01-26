@@ -1,15 +1,15 @@
-﻿using GraphQL.API.Subscriptions;
+﻿using GraphQL.Data.Subscriptions;
 using HotChocolate.Execution.Configuration;
 
 namespace GraphQL.Extensions
 {
-    public static class AddSubscriptions
-    {
-        public static IRequestExecutorBuilder AddSubscriptionsExtension(this IRequestExecutorBuilder builder)
-        {
-            return builder
-                .AddSubscriptionType()
-                .AddTypeExtension<AnswerSubscription>();
-        }
-    }
+	public static class AddSubscriptions
+	{
+		public static IRequestExecutorBuilder AddSubscriptionsExtension(this IRequestExecutorBuilder builder)
+		{
+			return builder
+				.AddSubscriptionType()
+				.AddTypeExtension<AnswerSubscription>();
+		}
+	}
 }
